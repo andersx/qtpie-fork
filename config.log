@@ -415,18 +415,18 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.9' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) 
- /usr/lib/gcc/x86_64-linux-gnu/5/f951 conftest.f -ffixed-form -quiet -dumpbase conftest.f -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/5/finclude -o /tmp/ccIRhuxh.s
+ /usr/lib/gcc/x86_64-linux-gnu/5/f951 conftest.f -ffixed-form -quiet -dumpbase conftest.f -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/5/finclude -o /tmp/ccsHBTal.s
 GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.9) version 5.4.0 20160609 (x86_64-linux-gnu)
 	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 GNU Fortran2008 (Ubuntu 5.4.0-6ubuntu1~16.04.9) version 5.4.0 20160609 (x86_64-linux-gnu)
 	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
- as -v --64 -o /tmp/cclCLWoj.o /tmp/ccIRhuxh.s
+ as -v --64 -o /tmp/ccEDCLnl.o /tmp/ccsHBTal.s
 GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1
 Reading specs from /usr/lib/gcc/x86_64-linux-gnu/5/libgfortran.spec
 rename spec lib to liborig
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoqm3gl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o conftest /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/ipp/lib/intel64 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/mkl/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/tbb/lib/intel64/gcc4.7 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. -lblas -llapack /tmp/cclCLWoj.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3d6eBl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o conftest /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/ipp/lib/intel64 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/mkl/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/tbb/lib/intel64/gcc4.7 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. -lblas -llapack /tmp/ccEDCLnl.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 configure:14548: result: -v
 configure:14550: checking for Fortran libraries of gfortran
 configure:14573: gfortran -o conftest -g -O2 -v -lblas -llapack conftest.f
@@ -435,18 +435,18 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.9' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) 
- /usr/lib/gcc/x86_64-linux-gnu/5/f951 conftest.f -ffixed-form -quiet -dumpbase conftest.f -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/5/finclude -o /tmp/ccRN4FYl.s
+ /usr/lib/gcc/x86_64-linux-gnu/5/f951 conftest.f -ffixed-form -quiet -dumpbase conftest.f -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/5/finclude -o /tmp/ccoEE6Qq.s
 GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.9) version 5.4.0 20160609 (x86_64-linux-gnu)
 	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 GNU Fortran2008 (Ubuntu 5.4.0-6ubuntu1~16.04.9) version 5.4.0 20160609 (x86_64-linux-gnu)
 	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
- as -v --64 -o /tmp/ccyDvOWn.o /tmp/ccRN4FYl.s
+ as -v --64 -o /tmp/ccpHtUcr.o /tmp/ccoEE6Qq.s
 GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1
 Reading specs from /usr/lib/gcc/x86_64-linux-gnu/5/libgfortran.spec
 rename spec lib to liborig
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cch2OCVp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o conftest /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/ipp/lib/intel64 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/mkl/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/tbb/lib/intel64/gcc4.7 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. -lblas -llapack /tmp/ccyDvOWn.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHujqzr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o conftest /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/ipp/lib/intel64 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/mkl/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/tbb/lib/intel64/gcc4.7 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. -lblas -llapack /tmp/ccpHtUcr.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 configure:14750: result:  -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/ipp/lib/intel64 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/mkl/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/tbb/lib/intel64/gcc4.7 -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/lib/intel64_lin -L/home/andersx/intel/compilers_and_libraries_2017.1.132/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. -lblas -llapack -lgfortran -lm -lquadmath
 configure:14765: checking for ddot dnrm2 dcopy daxpy dgemv in -lblas
 configure:14800: gcc -o conftest -g -O2  -lblas -llapack conftest.c -lblas   >&5
@@ -503,8 +503,8 @@ configure: failed program was:
 configure:14828: result: no
 configure:14840: checking for dgelss in -llapack
 configure:14875: gcc -o conftest -g -O2  -lblas -llapack conftest.c -llapack   >&5
-/tmp/ccBaJYrk.o: In function `main':
-/home/andersx/dev/qtpie-1.0-rc2/conftest.c:33: undefined reference to `dgelss'
+/tmp/ccZAkyJx.o: In function `main':
+/home/andersx/dev/qtpie-fork/conftest.c:33: undefined reference to `dgelss'
 collect2: error: ld returned 1 exit status
 configure:14882: $? = 1
 configure: failed program was:
@@ -660,16 +660,16 @@ lt_cv_sys_max_cmd_len=1572864
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run aclocal-1.11'
+ACLOCAL='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run aclocal-1.11'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run tar'
+AMTAR='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run tar'
 AR='ar'
 ARCH='-m64'
-AUTOCONF='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run autoconf'
-AUTOHEADER='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run autoheader'
-AUTOMAKE='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run automake-1.11'
+AUTOCONF='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run autoconf'
+AUTOHEADER='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run autoheader'
+AUTOMAKE='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run automake-1.11'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -708,7 +708,7 @@ LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO=''
 LN_S='ln -s'
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run makeinfo'
+MAKEINFO='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run makeinfo'
 MKDIR_P='/bin/mkdir -p'
 NM='/usr/bin/nm -B'
 NMEDIT=''
@@ -764,7 +764,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/install-sh'
+install_sh='${SHELL} /home/andersx/dev/qtpie-fork/build-aux/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
@@ -807,20 +807,3 @@ target_alias=''
 #define LT_OBJDIR ".libs/"
 
 configure: exit 0
-
-## ---------------------- ##
-## Running config.status. ##
-## ---------------------- ##
-
-This file was extended by QTPIE config.status 1.0-rc2, which was
-generated by GNU Autoconf 2.63.  Invocation command line was
-
-  CONFIG_FILES    = 
-  CONFIG_HEADERS  = 
-  CONFIG_LINKS    = 
-  CONFIG_COMMANDS = 
-  $ ./config.status src/Makefile
-
-on nuke
-
-config.status:980: creating src/Makefile

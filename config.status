@@ -357,7 +357,7 @@ Copyright (C) 2008 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/andersx/dev/qtpie-1.0-rc2'
+ac_pwd='/home/andersx/dev/qtpie-fork'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -824,7 +824,7 @@ S["FCFLAGS"]="-g -O2"
 S["FC"]="gfortran"
 S["am__untar"]="${AMTAR} xf -"
 S["am__tar"]="${AMTAR} chof - \"$$tardir\""
-S["AMTAR"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run tar"
+S["AMTAR"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run tar"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
 S["AWK"]="gawk"
@@ -832,12 +832,12 @@ S["mkdir_p"]="/bin/mkdir -p"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/install-sh"
-S["MAKEINFO"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/andersx/dev/qtpie-1.0-rc2/build-aux/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/install-sh"
+S["MAKEINFO"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/andersx/dev/qtpie-fork/build-aux/missing --run aclocal-1.11"
 S["VERSION"]="1.0-rc2"
 S["PACKAGE"]="qtpie"
 S["CYGPATH_W"]="echo"

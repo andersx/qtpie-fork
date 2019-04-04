@@ -57,6 +57,7 @@ c            call AssignsSTOBasis(loadXYZ%Atoms(j))
           end if
         end do
 c       By default, assign zero total charge
+        ! loadXYZ%TotalCharge = 1.01d0
         loadXYZ%TotalCharge = 0.0d0
         close(fXYZ)        
       end function loadXYZ

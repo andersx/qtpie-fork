@@ -11,7 +11,8 @@
         character (len = 50) :: fileName, paramfilename
         external :: dipmom
         double precision, dimension(3) :: dm
-        double precision, dimension(3,3) :: pol
+        double precision, dimension(3,3) :: pola
+        double precision, dimension(3,3) :: poln
         print *, "Single geometry mode"
         NumArgs = iargc()
         if (NumArgs.ge.1) then
@@ -39,8 +40,10 @@
 !        call QEq(Mol)
 !        print *, "QEq Energy is", Mol%Energy
 
-        call WriteLog(Mol, "qtpie.log")
-        print *, "Calculated charges written to qtpie.log"
+        ! call WriteLog(Mol, "qtpie.log")
+        ! print *, "Calculated charges written to qtpie.log"
+        print *, "CHARGES", Mol%Atoms(:)%Charge
+        
       
         call dipmom(Mol, dm)
         print *, "Dipole moment (Debyes)"
@@ -49,27 +52,35 @@
      &    sqrt(dm(1)*dm(1)+dm(2)*dm(2)+dm(3)*dm(3))/Debye
         print *, "Dipole moment (atomic units)"
         print *, dm
-        print *, "Polarizability (atomic units)"
-        call polarizability(Mol, pol)
-        ! call polarizability_ff(Mol, pol)
-        print *, pol(1,1:3)
-        print *, pol(2,1:3)
-        print *, pol(3,1:3)
+        print *, "Polarizability, analytical (atomic units)"
+        call polarizability(Mol, pola)
+        print *, pola(1,1:3)
+        print *, pola(2,1:3)
+        print *, pola(3,1:3)
+        print *, "Polarizability, numerical (atomic units)"
+        call polarizability_ff(Mol, poln)
+        print *, poln(1,1:3)
+        print *, poln(2,1:3)
+        print *, poln(3,1:3)
+        print *, "Error due to numerical accuracy"
+        print *, poln(1,1:3) - poln(1,1:3)
+        print *, poln(2,1:3) - poln(2,1:3)
+        print *, poln(3,1:3) - poln(3,1:3)
 
         !call polarizability_ff(Mol, pol)
         !print *, pol(1,1:3)
         !print *, pol(2,1:3)
         !print *, pol(3,1:3)
-        print *, Mol%Energy, dm(1), dm(2), dm(3),
-     &   pol(1,1), pol(2,2), pol(3,3)
+        ! print *, Mol%Energy, dm(1), dm(2), dm(3),
+        !     &   pol(1,1), pol(2,2), pol(3,3)
 
-      print *, "Numerical forces"
-      call DoGradientsByFiniteDifference(Mol)
-      print *, Mol%EGradient
-      print *, "Analytic forces"
-      call DoGradientsAnalytically(Mol)
-      print *, Mol%EGradient
-      print *
+      ! print *, "Numerical forces"
+      !call DoGradientsByFiniteDifference(Mol)
+      !print *, Mol%EGradient
+      !print *, "Analytic forces"
+      !call DoGradientsAnalytically(Mol)
+      !print *, Mol%EGradient
+      !print *
       call perturb_ff(Mol)
 
       end program onexyz

@@ -102,13 +102,13 @@ c       Calculate elements of polarizability tensor
         double precision, dimension(3,3), intent(out) :: pol
         double precision, dimension(-1:1,-1:1,-1:1) :: nrg
         integer :: i,j,k,n
-        double precision, parameter :: FiniteFieldStrength = 1.0d-4
+        double precision, parameter :: FiniteFieldStrength = 1.0d-3
         integer, parameter :: x = 1, y = 2, z = 3
         nrg = 0.0d0
         do i = -1,1
            do j = -1,1
               do k = -1,1
-                if (abs(i)+abs(j)+abs(k) .gt.2) exit
+                if (abs(i)+abs(j)+abs(k) .gt.2) cycle !exit
 c               Perturb electronegativities
                 do n = 1, Mol%NumAtoms
                      Mol%Atoms(n)%Element%Electronegativity
@@ -145,11 +145,11 @@ c               Perturb electronegativities
       pol(z,z)=-(nrg(0,0,1)-2*nrg(0,0,0)+nrg(0,0,-1))
      &  *FiniteFieldStrength**(-2)
 
-      pol(x,y)=-(nrg(1,1,0)-nrg(-1,1,0)-nrg(1,-1,0)+nrg(-1,-1,0))*0.25
+      pol(x,y)=-(nrg(1,1,0)-nrg(-1,1,0)-nrg(1,-1,0)+nrg(-1,-1,0))*0.25d0
      &  *FiniteFieldStrength**(-2)
-      pol(x,z)=-(nrg(1,0,1)-nrg(-1,0,1)-nrg(1,0,-1)+nrg(-1,0,-1))*0.25
+      pol(x,z)=-(nrg(1,0,1)-nrg(-1,0,1)-nrg(1,0,-1)+nrg(-1,0,-1))*0.25d0
      &  *FiniteFieldStrength**(-2)
-      pol(y,z)=-(nrg(0,1,1)-nrg(0,-1,1)-nrg(0,1,-1)+nrg(0,-1,-1))*0.25
+      pol(y,z)=-(nrg(0,1,1)-nrg(0,-1,1)-nrg(0,1,-1)+nrg(0,-1,-1))*0.25d0
      &  *FiniteFieldStrength**(-2)
 
       pol(y,x)=pol(x,y)
@@ -165,7 +165,8 @@ c               Perturb electronegativities
         ! double precision, dimension(3,3), intent(out) :: pol
         double precision, dimension(-1:1,-1:1,-1:1) :: nrg
         integer :: i,j,k,n
-        double precision, parameter :: FiniteFieldStrength = 1.0d-3
+        ! double precision, parameter :: FiniteFieldStrength = 0.01d0
+        double precision, parameter :: FiniteFieldStrength = 1.0d-4
         integer, parameter :: x = 1, y = 2, z = 3
         nrg = 0.0d0
         do i = -1,1
@@ -183,8 +184,9 @@ c               Perturb electronegativities
                 end do
                 call QTPIE(Mol)
 
-!                call QEq(Mol)
+                ! call QEq(Mol)
                 nrg(i,j,k) = Mol%Energy
+                write (*,*) "QML", i, j, k, Mol%Atoms(:)%Charge
                 do n = 1, Mol%NumAtoms
                      Mol%Atoms(n)%Element%Electronegativity
      &             = Mol%Atoms(n)%Element%Electronegativity
@@ -196,7 +198,6 @@ c               Perturb electronegativities
 
 !                write (*,*) "X = ", i, "Y = ", j, "Z= ", k, 
 !     &                    Mol%Energy, Mol%Atoms(:)%Charge
-                write (*,*) "QML", i, j, k, Mol%Atoms(:)%Charge
 
               end do
            end do
